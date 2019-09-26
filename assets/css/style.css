@@ -6,11 +6,12 @@
     text-align: center;
     width: 140px;
     height: 70px;
-    margin: 0;
+    margin-bottom:0;
     border-bottom: 1px solid #cccccc;
 }
 .navbar{
-    padding:0;
+    padding-top:0;
+    padding-bottom:0;
 }
 
 body{
@@ -32,22 +33,22 @@ a{
     padding: 0px 5px;
 }
 .footer{
-    position: sticky;
     bottom: 0px;
     margin-top: 40px;
     background: #666666;
     height: 40px;
-    line-height: 50px;
     border-top: 8px solid #4aaaa5;
     color: #a9a8a0;
     font-size: 8px;
+    position: sticky;
+    text-align:center;
 }
 .main-content{
     margin-left: auto;
     margin-right: auto;
-    height: 680px;
     padding-left: 30px;
     padding-right: 30px;
+    height: 680px;
     background: #ffffff;
     border: 1px solid #dddddd;
     margin-top: 20px;
@@ -118,9 +119,28 @@ hr{
     margin-left: 8px;
 }
 
-@media (min-width: 1200px){
-.container {
-    max-width: 960px;
-}
+.container{
+    margin-left:0;
+    padding-left:1rem;
 }
 
+@media (max-width:640px){
+    .navbar-brand{
+        width: 100%;
+        margin-right:0;
+        border-bottom:none;
+    }
+    .navbar{
+        padding:0;
+        border-bottom: 1px solid #cccccc;
+    }
+    .container{
+        padding: 0 1rem;
+        width: 100%;
+        margin-left: 0;
+        margin-right: 0;
+    }
+    .par-about{
+        clear:both;
+    }
+}
